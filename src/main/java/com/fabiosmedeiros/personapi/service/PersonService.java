@@ -53,7 +53,7 @@ public class PersonService {
 
         return createMessageResponse(updatedPerson.getId(), "Update person with ID ");
     }
-    
+
     public void delete(Long id) throws PersonNotFoundException {
         verifyIfExists(id);
         personRepository.deleteById(id);
